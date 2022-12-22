@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 :root {
-  --primary-color: #e8505b;
+  --primary-color: #8eadb2;
   --white-color: #ffffff;
-  --dark-color: #171819;
-  --about-bg-color: #f9f9f9;
+  --dark-color: #293233;
 
-  --head-color: #701254;
-  --gray-color: #909090;
-  --link-color: #404040;
-  --p-color: #666262;
+  --navbar-color: rgba(143, 174, 179, 0.8);
+
+  --head-color: #70898c;
+  --p-color: #293233;
+  --heading-section-color: #f1ba93;
 
   --base-font-family: "Plain", sans-serif;
   --font-weight-bold: bold;
@@ -40,7 +40,6 @@
 }
 
 a {
-  color: var(--link-color);
   font-weight: normal;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -66,7 +65,7 @@ body {
 }
 
 .navbar {
-  background: #204051;
+  background: var(--navbar-color);
   padding: 1rem;
 }
 
@@ -95,8 +94,10 @@ body {
 .navbar-brand:hover,
 .nav-item .nav-link.active,
 .nav-item .nav-link:hover {
-  color: var(--primary-color);
+  color: var(--p-color);
 }
+
+
 
 /* ******************************* */
 /* hero section */
@@ -141,6 +142,7 @@ h6 {
 
 h1 {
   font-size: 48px;
+  font-family: var(--base-font-family);
   font-weight: var(--font-weight-bold);
   letter-spacing: -1px;
   text-transform: uppercase;
@@ -199,22 +201,6 @@ strong {
   cursor: pointer;
   padding: 10px;
   border-radius: 15px;
-}
-
-.apple {
-  border: 2px solid black;
-}
-
-.apple:hover {
-  background-color: rgba(255, 255, 255, 0.411);
-}
-
-.play-store {
-  background-color: #0000007e;
-}
-
-.play-store:hover {
-  background-color: rgba(124, 11, 54, 0.767);
 }
 
 .ftco-section {
@@ -363,7 +349,7 @@ strong {
   display: block;
   margin-bottom: 5px;
   text-transform: uppercase;
-  color: #f65d5d;
+  color: var(--heading-section-color);
   font-weight: 700;
   letter-spacing: 2px;
 }
