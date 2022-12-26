@@ -6,7 +6,7 @@
   --white-color: #ffffff;
 
   
-  --navbar-color: rgba(143, 174, 179, 1);
+  --navbar-color: rgba(42, 51, 51, 0.3);
   
   --title-color: #293233;
   --p-color: #293233;
@@ -89,6 +89,8 @@ body {
 .navbar {
   background: var(--navbar-color);
   padding: 1rem;
+
+  z-index: 1030;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -150,11 +152,16 @@ body {
 }
 
 #myVideo {
-  position: static;
+  position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  top: 0px;
+}
+
+.hero-logo {
+  margin-bottom: 10px;
 }
 
 h1,
@@ -518,7 +525,6 @@ strong {
   grid-row: 1/2;
 }
 .card-3 video {
-  position: relative;
   top: -13px;
   left: 3px;
   width: 109%;
@@ -529,7 +535,7 @@ strong {
 }
 
 #myVideo {
-  /* position: fixed; */
+  position: absolute;
   right: 0;
   bottom: 0;
   min-width: 100%;

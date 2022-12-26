@@ -67,7 +67,7 @@
     $(".navbar-collapse").collapse("hide");
   });
 
-  // AOS ANIMATION
+  // INITIALIZE AOS ANIMATION (3/3)
   AOS.init({
     disable: "mobile",
     duration: 800,
